@@ -1,19 +1,30 @@
 export default function Home() {
   return (
     <div style={{ 
-      fontFamily: 'system-ui, sans-serif', 
+      fontFamily: 'sans-serif', 
       display: 'flex', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      height: '100vh',
       flexDirection: 'column',
-      backgroundColor: '#f0f2f5' 
+      alignItems: 'center', 
+      justifyContent: 'center', 
+      height: '100vh',
+      backgroundColor: '#fafafa',
+      color: '#333'
     }}>
-      <h1 style={{ color: '#0070f3' }}>Next.js + Vercel Yayında!</h1>
-      <p>Bu site tamamen GitHub üzerinden oluşturuldu.</p>
-      <a href="https://nextjs.org" style={{ marginTop: '20px', color: 'gray' }}>
-        Next.js Dokümantasyonu →
-      </a>
+      <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>🚀 Sitem Yayında!</h1>
+      <p style={{ fontSize: '1.2rem', color: '#666' }}>
+        GitHub ve Vercel ile saniyeler içinde canlıya alındı.
+      </p>
+      <div style={{ marginTop: '2rem' }}>
+        <a href="https://nextjs.org" style={{ 
+          padding: '10px 20px', 
+          backgroundColor: '#0070f3', 
+          color: 'white', 
+          borderRadius: '5px', 
+          textDecoration: 'none' 
+        }}>
+          Daha Fazla Bilgi
+        </a>
+      </div>
     </div>
   )
 }
